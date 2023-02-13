@@ -1,4 +1,4 @@
-import { Box, Typography, Stack, Button } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 
 function HeroBanner() {
   return (
@@ -24,7 +24,11 @@ function HeroBanner() {
       <Button
         variant="contained"
         href="#exercises"
-        sx={{ backgroundColor: "#ff2625", padding: "10px" }}
+        sx={{
+          backgroundColor: "#ff2625",
+          padding: "10px",
+          ":hover": { backgroundColor: "#ff2625" },
+        }}
       >
         Explore Exercises
       </Button>
