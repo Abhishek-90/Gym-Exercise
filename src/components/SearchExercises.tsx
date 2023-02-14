@@ -55,6 +55,10 @@ function SearchExercises() {
               lg: "175px",
               xs: "80px",
             },
+            ":hover": {
+              backgroundColor: "#ff2625",
+              // color: "#fff",
+            },
           }}
           variant="contained"
         >
