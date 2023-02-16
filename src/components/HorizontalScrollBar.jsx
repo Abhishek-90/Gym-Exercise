@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
+import BodyPart from "./BodyPart";
 
-function HorizontalScrollBar({ data }) {
+function HorizontalScrollBar({ data, bodyPart, setBodyPart }) {
   return (
     <div>
       {data.map((item) => (
@@ -8,7 +9,10 @@ function HorizontalScrollBar({ data }) {
           key={item.id || item}
           title={item.id || item}
           itemId={item.id || item}
-        ></Box>
+          m="0 40px"
+        >
+          <BodyPart item={item} bodyPart={bodyPart} setBodyPart={setBodyPart} />
+        </Box>
       ))}
     </div>
   );
