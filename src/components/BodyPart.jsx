@@ -17,12 +17,24 @@ const BodyPart = ({ item, bodyPart, setBodyPart }) => {
         cursor: "pointer",
         gap: "47px",
       }}
+      onClick={() => {
+        setBodyPart(item);
+        window.scrollTo({ top: 1800, left: 100, behaviour: "smooth" });
+      }}
     >
       <img
         src="/assets/icons/gym.png"
         alt="dumbbells"
         style={{ height: "40px", width: "40px" }}
       />
+      <Typography
+        fontSize="24px"
+        fontWeight="bold"
+        color="#3a1212"
+        textTransform="capitalize"
+      >
+        {item}
+      </Typography>
     </Stack>
   );
 };
