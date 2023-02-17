@@ -5,7 +5,7 @@ export const exerciseOption = {
     "X-RapidAPI-Host": "exercisedb.p.rapidapi.com",
   },
 };
-async function fetchData(url: any, options: any) {
+async function fetchData(url, options) {
   const response = await fetch(url, options);
   const json = await response.json();
   return json;
