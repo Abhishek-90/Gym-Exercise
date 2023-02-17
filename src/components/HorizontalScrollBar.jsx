@@ -2,13 +2,15 @@ import { Box, Typography } from "@mui/material";
 import BodyPart from "./BodyPart";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import { useContext } from "react";
+import LeftArrowImage from "../assets/icons/left-arrow.png";
+import RightArrowImage from "../assets/icons/right-arrow.png";
 
 const LeftArrow = () => {
   const { scrollPrev } = useContext(VisibilityContext);
 
   return (
     <Typography onClick={() => scrollPrev()} className="right-arrow">
-      <img src="/assets/icons/left-arrow.png" alt="right-arrow" />
+      <img src={LeftArrowImage} alt="right-arrow" />
     </Typography>
   );
 };
@@ -18,7 +20,7 @@ const RightArrow = () => {
 
   return (
     <Typography onClick={() => scrollNext()} className="left-arrow">
-      <img src="/assets/icons/right-arrow.png" alt="right-arrow" />
+      <img src={RightArrowImage} alt="right-arrow" />
     </Typography>
   );
 };

@@ -1,4 +1,5 @@
 import { Box, Typography, Button } from "@mui/material";
+import HeroBannerImage from "../assets/images/banner.png";
 
 function HeroBanner() {
   return (
@@ -43,7 +44,7 @@ function HeroBanner() {
       </Typography>
       <img
         className="hero-banner-img"
-        src="/assets/images/banner.png"
+        src={HeroBannerImage}
         alt="hero-banner-img"
       />
     </Box>

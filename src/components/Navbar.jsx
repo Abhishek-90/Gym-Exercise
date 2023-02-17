@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Stack } from "@mui/material";
-// import Logo from "";
+import Logo from "../assets/images/Logo.png";
 
 function Navbar() {
   return (
@@ -14,8 +14,8 @@ function Navbar() {
     >
       <Link to="/">
         <img
-          src="/assets/images/Logo.png"
-          alt=""
+          src={Logo}
+          alt="logo"
           style={{ width: "48px", height: "48px", margin: "0 20px" }}
         />
       </Link>
