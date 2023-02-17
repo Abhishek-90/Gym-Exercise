@@ -24,13 +24,11 @@ function Exercises({ exercises, bodyPart, setExercises }) {
       let exerciseData = [];
 
       if (bodyPart === "all") {
-        console.log(bodyPart);
         exerciseData = await fetchData(
           "https://exercisedb.p.rapidapi.com/exercises",
           exerciseOption
         );
       } else {
-        console.log(bodyPart);
         exerciseData = await fetchData(
           `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`,
           exerciseOption
