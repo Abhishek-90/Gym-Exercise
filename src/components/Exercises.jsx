@@ -13,7 +13,6 @@ function Exercises({ exercises, setBodyPart, setExercises }) {
     indexOfFirstExercise,
     indexOfLastExercise
   );
-  console.log(currentExercises.length);
 
   const paginate = (e, value) => {
     setCurrentPage(value);
