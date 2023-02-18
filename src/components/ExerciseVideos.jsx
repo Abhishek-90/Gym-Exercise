@@ -30,6 +30,14 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
             rel="noreferrer"
           >
             <img src={video.video.thumbnails[0].url} alt={video.video.title} />
+            <Box>
+              <Typography variant="h5" color="#000">
+                {video.video.title}
+              </Typography>
+              <Typography variant="h6" color="#000">
+                {video.video.channelName}
+              </Typography>
+            </Box>
           </a>
         ))}
       </Stack>
