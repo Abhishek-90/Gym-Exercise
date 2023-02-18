@@ -34,10 +34,10 @@ const Details = ({ exerciseDetail }) => {
           to target your <b>{target}</b>. It will help you improve your mood and
           energy.
         </Typography>
-        {extraDetails.map(({ image, name }) => {
+        {extraDetails.map(({ image, name }, index) => {
           return (
             <Stack
-              key={name}
+              key={index}
               direction="row"
               ml="22px"
               gap="24px"
